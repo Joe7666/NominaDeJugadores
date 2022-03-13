@@ -43,5 +43,12 @@ namespace NominaDeJugadores
             form2.Show();
             form2.Lista2 = Lista1;
         }
+
+        private void btnCadena_Click(object sender, EventArgs e)
+        {
+            From3 form3 = new From3();
+            form3.Show();
+            form3.lista3 = Lista1;
+        }
     }
 }

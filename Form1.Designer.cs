@@ -40,6 +40,7 @@ namespace NominaDeJugadores
             this.txtPrecio = new System.Windows.Forms.TextBox();
             this.btnMostrar = new System.Windows.Forms.Button();
             this.mtxtPosicion = new System.Windows.Forms.MaskedTextBox();
+            this.btnCadena = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnGuardar
@@ -141,7 +142,7 @@ namespace NominaDeJugadores
             // btnMostrar
             // 
             this.btnMostrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMostrar.Location = new System.Drawing.Point(468, 220);
+            this.btnMostrar.Location = new System.Drawing.Point(468, 158);
             this.btnMostrar.Name = "btnMostrar";
             this.btnMostrar.Size = new System.Drawing.Size(94, 51);
             this.btnMostrar.TabIndex = 11;
@@ -158,12 +159,24 @@ namespace NominaDeJugadores
             this.mtxtPosicion.Size = new System.Drawing.Size(138, 26);
             this.mtxtPosicion.TabIndex = 12;
             // 
+            // btnCadena
+            // 
+            this.btnCadena.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadena.Location = new System.Drawing.Point(468, 244);
+            this.btnCadena.Name = "btnCadena";
+            this.btnCadena.Size = new System.Drawing.Size(94, 48);
+            this.btnCadena.TabIndex = 13;
+            this.btnCadena.Text = "Cadena";
+            this.btnCadena.UseVisualStyleBackColor = true;
+            this.btnCadena.Click += new System.EventHandler(this.btnCadena_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(620, 397);
+            this.Controls.Add(this.btnCadena);
             this.Controls.Add(this.mtxtPosicion);
             this.Controls.Add(this.btnMostrar);
             this.Controls.Add(this.txtPrecio);
@@ -196,6 +209,7 @@ namespace NominaDeJugadores
         private System.Windows.Forms.TextBox txtPrecio;
         private System.Windows.Forms.Button btnMostrar;
         private System.Windows.Forms.MaskedTextBox mtxtPosicion;
+        private System.Windows.Forms.Button btnCadena;
     }
 }
 
