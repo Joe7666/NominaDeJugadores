@@ -41,6 +41,9 @@ namespace NominaDeJugadores
             this.btnMostrar = new System.Windows.Forms.Button();
             this.mtxtPosicion = new System.Windows.Forms.MaskedTextBox();
             this.btnCadena = new System.Windows.Forms.Button();
+            this.btnEdad = new System.Windows.Forms.Button();
+            this.txtEdad = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnGuardar
@@ -105,7 +108,7 @@ namespace NominaDeJugadores
             // btnLimpiar
             // 
             this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiar.Location = new System.Drawing.Point(259, 313);
+            this.btnLimpiar.Location = new System.Drawing.Point(158, 401);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(97, 51);
             this.btnLimpiar.TabIndex = 5;
@@ -170,12 +173,45 @@ namespace NominaDeJugadores
             this.btnCadena.UseVisualStyleBackColor = true;
             this.btnCadena.Click += new System.EventHandler(this.btnCadena_Click);
             // 
+            // btnEdad
+            // 
+            this.btnEdad.BackColor = System.Drawing.Color.Beige;
+            this.btnEdad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEdad.Location = new System.Drawing.Point(468, 330);
+            this.btnEdad.Name = "btnEdad";
+            this.btnEdad.Size = new System.Drawing.Size(94, 37);
+            this.btnEdad.TabIndex = 14;
+            this.btnEdad.Text = "Edad ";
+            this.btnEdad.UseVisualStyleBackColor = false;
+            this.btnEdad.Click += new System.EventHandler(this.btnEdad_Click);
+            // 
+            // txtEdad
+            // 
+            this.txtEdad.Location = new System.Drawing.Point(259, 320);
+            this.txtEdad.Name = "txtEdad";
+            this.txtEdad.Size = new System.Drawing.Size(100, 24);
+            this.txtEdad.TabIndex = 15;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(158, 318);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(62, 26);
+            this.label5.TabIndex = 16;
+            this.label5.Text = "Edad:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(620, 397);
+            this.ClientSize = new System.Drawing.Size(809, 496);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.txtEdad);
+            this.Controls.Add(this.btnEdad);
             this.Controls.Add(this.btnCadena);
             this.Controls.Add(this.mtxtPosicion);
             this.Controls.Add(this.btnMostrar);
@@ -210,6 +246,9 @@ namespace NominaDeJugadores
         private System.Windows.Forms.Button btnMostrar;
         private System.Windows.Forms.MaskedTextBox mtxtPosicion;
         private System.Windows.Forms.Button btnCadena;
+        private System.Windows.Forms.Button btnEdad;
+        private System.Windows.Forms.TextBox txtEdad;
+        private System.Windows.Forms.Label label5;
     }
 }
 
