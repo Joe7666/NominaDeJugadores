@@ -30,5 +30,17 @@ namespace NominaDeJugadores
             }
             return aux;
         }
+        public List<Jugador> MetodoEdad()
+        {
+            List<Jugador> aux = new List<Jugador>();
+            foreach(Jugador jugador in Jugadores)
+            {
+                if(jugador.Edad%2==0)
+                {
+                    aux.Add(jugador);
+                }
+            }
+            return aux;
+        }
     }
 }

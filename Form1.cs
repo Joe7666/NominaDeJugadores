@@ -25,6 +25,7 @@ namespace NominaDeJugadores
             jugador.Apellidos = mtxtApellido.Text;
             jugador.Posicion = mtxtPosicion.Text;
             jugador.Precio = Convert.ToInt32(txtPrecio.Text);
+            jugador.Edad = Convert.ToInt32(txtEdad.Text);
             Lista1.Agregar(jugador);
             MessageBox.Show("Datos Guardados correctamente!!");
         }
@@ -35,6 +36,7 @@ namespace NominaDeJugadores
             mtxtApellido.Text = " ";
             mtxtPosicion.Text = " ";
             txtPrecio.Text = " ";
+            txtEdad.Text = " ";
         }
 
         private void btnMostrar_Click(object sender, EventArgs e)
@@ -49,6 +51,13 @@ namespace NominaDeJugadores
             From3 form3 = new From3();
             form3.Show();
             form3.lista3 = Lista1;
+        }
+
+        private void btnEdad_Click(object sender, EventArgs e)
+        {
+            Form3 form4 = new Form3();
+            form4.Show();
+            form4.lista4 = Lista1;
         }
     }
 }
